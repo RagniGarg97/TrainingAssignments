@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Fetch the last modified date and time of current document</title>
+<script>
+function myFunction() {
+  var x = document.lastModified;
+  document.getElementById("para").innerHTML = x;
+}
+</script>
+</head>
+<body>
+<button onclick="myFunction()">Check</button>
+
+<p id="para"></p>
+
+</body>
+</html>
