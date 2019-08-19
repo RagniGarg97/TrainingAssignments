@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>function that returns a passed string with letters in alphabetical order</title>
+
+	<script type="text/javascript">
+		
+		function sorted(){
+
+			var s1=document.arrays.value1.value;	
+			var s2=s1.split("").sort().join("");
+			alert(s2);
+		}
+	</script>
+</head>
+<body>
+
+
+		<form name="arrays">
+			ENTER STRING: <input type="text" name="value1"><br/>   
+			<button name="on_submit" type="button" onclick="sorted()">SUBMIT</button>
+		</form>
+ 
+
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>to highlight bold letters of paragraph on click of button</title>
+
+	<script type="text/javascript">
+		function highlight(){
+            	var bold=document.getElementsByTagName("b");
+                for(var i=0;i<bold.length;i++){
+                    bold[i].style.color="red";
+                }
+    }
+	</script>
+</head>
+<body>
+    
+    <p> ragini garg<b>FSD</b> xgfxgfcgvbvn <b>Test</b></p>
+<form name="strings">
+			
+			<button name="on_submit" type="button" onclick="highlight()">SUBMIT</button>
+		</form>
+</body>
+</html>

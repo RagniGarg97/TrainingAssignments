@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>guess number between 1 to 15</title>
+	<script type="text/javascript">
+		function guess()
+		{
+			var random = Math.floor((Math.random() * 15) + 1); 	
+			var v=document.guess_game.value1.value;	
+			if(v==random)
+			{
+				alert("Right On!");
+			}
+			else
+			{
+				alert("Unlucky :(");
+			}	 		
+		}	
+	</script>
+</head>
+<body>
+	<div> 
+		<form name="guess_game">
+			ENTER NUMBER: <input type="text" name="value1"><br/>   
+			<button name="guess_check" type="button" onclick="guess()">SUBMIT</button>
+		</form>
+ 	</div>
+</body>
+</html>

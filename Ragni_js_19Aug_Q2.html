@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>to converts a specified number to an array of digits</title>
+
+	<script type="text/javascript">
+		
+		function conversion(){
+
+			var n=document.arrays.value1.value;	
+			let dataArray = Array.from(n.toString());
+			alert(dataArray);
+		}
+	</script>
+</head>
+<body>
+
+
+		<form name="arrays">
+			ENTER NUMBER: <input type="text" name="value1"><br/>   
+			<button name="on_submit" type="button" onclick="conversion()">SUBMIT</button>
+		</form>
+ 
+
+</body>
+</html>

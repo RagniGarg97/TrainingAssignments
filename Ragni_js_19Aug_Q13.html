@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>to test whether the character at the provided index is upper case or not</title>
+
+	<script type="text/javascript">
+		function check_case(){
+            	var s=document.strings.value1.value;
+            	var n=document.strings.value2.value;
+            	if(s.charAt(n).toUpperCase() === s.charAt(n)){
+            		alert("yes!! it is upper case letter");
+
+            	}
+            	else{
+            		alert("it is lower case letter");
+            	}
+    }
+	</script>
+</head>
+<body>
+<form name="strings">
+			ENTER: <input type="text" name="value1"><br/>   
+			enter index:<input type="text" name="value2"><br/>  
+			<button name="on_submit" type="button" onclick="check_case()">SUBMIT</button>
+		</form>
+</body>
+</html>
