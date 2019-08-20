@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Take a value from user and remove the option from combo dropdown with that value</title>
+<script>
+  function myFunction() {
+  var x = document.getElementById("selector");
+  x.remove(x.selectedIndex);
+}
+</script>
+</head>
+<body>
+<form>
+  Select:
+  <br>
+  <select id="selector" size="3">
+    <option>RAGINI</option>
+    <option>JYOTIKA</option>
+    <option>UPASANA</option>
+  </select>
+</form>
+<br>
+<button onclick="myFunction()">Remove</button>
+</body>
+</html>

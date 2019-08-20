@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> Take input from user and create n number of text boxes dynamically</title>
+<script type="text/javascript">
+    function myfunction(){
+    var p=document.getElementById("ip").value; 
+    var s= "";
+    for(var i = 0; i < p; i++) {
+        s+= '<input type="text" name="Fname"><br><br>'; 
+    }
+    document.getElementById("para").innerHTML=s;
+    }
+</script>
+</head>
+<body>
+<p id="para"></p>  
+<input type="text" id="ip">
+<button type="button" onclick=" return myfunction()">Click Here!</button>
+</body>
+</html>
